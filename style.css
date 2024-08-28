@@ -1,0 +1,136 @@
+body{
+    background-color: #F3F5FC;
+    padding: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+main{
+    height: 85vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.container_interaccion{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 8;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+#inputUsuario{
+    background-color: #F3F5FC;
+    width: 100%;
+    text-align: start;
+    justify-content: start;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.texto_input{
+    color: #0A3871;
+    font-size: 32px;
+}
+
+.texto_alerta{
+    color: #495057;
+    font-size: 12px;
+}
+
+.container_interaccion_input{
+    display: flex;
+    flex: 1;
+}
+
+.container_interaccion_botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.boton{
+    border-radius: 16px;
+    background: #0A3871;
+    padding: 16px 24px;
+    border: 1px solid #0A3871;
+    border-color: #0A3871;
+    width: 100%;
+    font-size: 18px;
+    font-style: regular;
+    color: white;
+}
+
+.boton_secundario{
+    background-color: #F3F5FC;
+    color: #0A3871;
+}
+
+.boton:disabled {
+    background: #898989;
+    color: #0A3871;
+    background: #D8DFE8;
+}
+
+.container_resultado{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 32px;
+    min-width: 20%;
+    max-width: 20%;
+    border-radius: 32px;
+    box-shadow: 1px 1px 20px #CED4DA;
+    justify-content: center;
+}
+
+.container_resultado_default{
+    text-align: center;
+}
+
+#mensaje_1_default{
+    font-weight: bold;
+} 
+
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .container_resultado{
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    #imagen_default{
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .container_interaccion_botones{
+        flex-direction: column;
+    }
+
+    .container_resultado{
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    #imagen_default{
+        display: none;
+    }
+}
